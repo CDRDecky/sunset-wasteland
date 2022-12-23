@@ -268,12 +268,12 @@
 	if(!ishuman(player)) //This should never be true, but who knows.
 		return
 	implant(player, new /obj/item/organ/tongue/robot/gen2synth(src)) //Robotic voice.
-	implant(player, new /obj/item/organ/ears/cybernetic(src))  
+	implant(player, new /obj/item/organ/ears/cybernetic(src))
 	implant(player, new /obj/item/organ/cyberimp/brain/protogen(src))  //For EMP luls
-	implant(player, new /obj/item/organ/lungs/cybernetic/tier2(src)) 
-	implant(player, new /obj/item/organ/liver/cybernetic/upgraded(src)) 
-	implant(player, new /obj/item/organ/heart/cybernetic/upgraded(src)) 
-	implant(player, new /obj/item/organ/cyberimp/arm/toolset(src)) 
+	implant(player, new /obj/item/organ/lungs/cybernetic/tier2(src))
+	implant(player, new /obj/item/organ/liver/cybernetic/upgraded(src))
+	implant(player, new /obj/item/organ/heart/cybernetic/upgraded(src))
+	implant(player, new /obj/item/organ/cyberimp/arm/toolset(src))
 	implant(player, new /obj/item/organ/cyberimp/chest/nutriment/plus(src)) //Simulates current synth hunger mechanics.
 	implant(player, new /obj/item/organ/eyes/robotic/shield(src))
 	qdel(src)
@@ -368,3 +368,14 @@
 
 /obj/item/storage/box/large/custom_kit/yan/PopulateContents()
 	new /obj/item/book/granter/martial/yan(src)
+
+/datum/gear/donator/kits/yan
+	name = "Red Hand pack"
+	path = /obj/item/storage/box/large/custom_kit/anarchist
+	ckeywhitelist = list ("dickydeck")
+
+/obj/item/storage/box/large/custom_kit/anarchist/PopulateContents()
+	new /obj/item/clothing/suit/armor/f13/combat/mk2/remnant/modified(src)
+	new /obj/item/clothing/head/helmet/f13/combat/mk2/remnant/modified(src)
+	new /obj/item/clothing/under/f13/redhand_under(src)
+
