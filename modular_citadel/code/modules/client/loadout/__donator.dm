@@ -378,4 +378,5 @@
 	new /obj/item/clothing/suit/armor/f13/combat/mk2/remnant/modified(src)
 	new /obj/item/clothing/head/helmet/f13/combat/mk2/remnant/modified(src)
 	new /obj/item/clothing/under/f13/redhand_under(src)
+	new /obj/item/book/granter/crafting_recipe/redhandrecipes(src)
 
